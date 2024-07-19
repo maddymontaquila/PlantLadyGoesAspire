@@ -1,0 +1,6 @@
+@PlantLadyGoesAspire.Api_HostAddress = http://localhost:5051
+
+GET {{PlantLadyGoesAspire.Api_HostAddress}}/getPlants/
+Accept: application/json
+
+###

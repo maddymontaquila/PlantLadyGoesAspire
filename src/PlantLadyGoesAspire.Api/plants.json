@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Monstera",
+    "Image": "https://media.greg.app/cGxhbnQtZGItcGhvdG9zL21vbnN0ZXJhXy5qcGc=?format=pjpeg&optimize=high&auto=webp&precrop=1000:1000,smart&fit=crop&width=1000&height=1000",
+    "Sunlight": "Full Sun"
+  },
+  {
+    "Name": "Jade",
+    "Image": "https://media.greg.app/cGxhbnQtZGItcGhvdG9zL21vbnN0ZXJhXy5qcGc=?format=pjpeg&optimize=high&auto=webp&precrop=1000:1000,smart&fit=crop&width=1000&height=1000",
+    "Sunlight": "Partial Sun"
+  }
+]

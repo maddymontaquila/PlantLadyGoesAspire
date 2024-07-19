@@ -1,0 +1,51 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+@inject PlantService plantService
+
+<PageTitle>Home</PageTitle>
+
+<h1 class="plant-title">Hello, Plants!</h1>
+@if (plants == null)
+{
+    <h2>Add a plant, loser!!!</h2>
+}
+else {
+<div class="card-box">
+    @foreach (var plant in plants)
+    {
+        <div class="card plant-card mb-3" style="width: 18rem;">
+            <div class="row g-0">
+                <div class="col-md-5 plant-card-img">
+                    <img src="sample-images/jade.jpg" style="object-fit: cover;width: 75%;height: 75%;" class="rounded-start" alt="...">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h5 class="card-title">@plant.Name</h5>
+                        <h6 class="card-subtitle">@plant.Sunlight</h6>
+                        <p class="card-text">Last watered on @plant.LastWatered</p>
+                        <a class="btn btn-primary" @onclick="@(() => WaterPlant(plant))">Water</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+}
+
+@code {
+    private Plant[]? plants;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        plants = await plantService.GetPlantsAsync();
+
+    }
+
+    private void WaterPlant(Plant plant)
+    {
+        plant.LastWatered = DateOnly.FromDateTime(DateTime.Now);
+    }
+
+}
