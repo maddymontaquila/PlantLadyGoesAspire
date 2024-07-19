@@ -1,12 +1,22 @@
-[
+﻿[
   {
     "Name": "Monstera",
-    "Image": "https://media.greg.app/cGxhbnQtZGItcGhvdG9zL21vbnN0ZXJhXy5qcGc=?format=pjpeg&optimize=high&auto=webp&precrop=1000:1000,smart&fit=crop&width=1000&height=1000",
-    "Sunlight": "Full Sun"
+    "Image": "https://github.com/maddymontaquila/PlantLadyGoesAspire/blob/main/src/PlantLadyGoesAspire.Api/img/monstera.jpg?raw=true",
+    "Sunlight": "Partial Sun 🌤️"
   },
   {
     "Name": "Jade",
-    "Image": "https://media.greg.app/cGxhbnQtZGItcGhvdG9zL21vbnN0ZXJhXy5qcGc=?format=pjpeg&optimize=high&auto=webp&precrop=1000:1000,smart&fit=crop&width=1000&height=1000",
-    "Sunlight": "Partial Sun"
+    "Image": "https://github.com/maddymontaquila/PlantLadyGoesAspire/blob/main/src/PlantLadyGoesAspire.Api/img/jade.jpg?raw=true",
+    "Sunlight": "Partial Sun 🌤️"
+  },
+  {
+    "Name": "Fiddle Leaf Fig",
+    "Image": "https://github.com/maddymontaquila/PlantLadyGoesAspire/blob/main/src/PlantLadyGoesAspire.Api/img/fiddleleaf.jpg?raw=true",
+    "Sunlight": "Full Sun ☀️"
+  },
+  {
+    "Name": "Snake Plant",
+    "Image": "https://github.com/maddymontaquila/PlantLadyGoesAspire/blob/main/src/PlantLadyGoesAspire.Api/img/jade.jpg?raw=true",
+    "Sunlight": "Thrives in Darkness 🌑"
   }
 ]
