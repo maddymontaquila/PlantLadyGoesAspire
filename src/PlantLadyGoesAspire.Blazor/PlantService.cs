@@ -21,7 +21,7 @@ namespace PlantLadyGoesAspire.Blazor
     }
 }
 
-public record class Plant(string Name, string? Sunlight, string? Summary)
+public record class Plant(string Name, string? Sunlight, string? Summary, string? Image)
 {
     public DateOnly LastWatered { get; set; } 
 }

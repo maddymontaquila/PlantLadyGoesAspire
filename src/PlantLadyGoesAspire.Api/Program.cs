@@ -28,6 +28,6 @@ app.MapGet("/getPlants", () =>
 
 app.Run();
 
-internal record Plant(string Name, DateOnly LastWatered, string? Sunlight, string? Summary)
+internal record Plant(string Name, DateOnly LastWatered, string? Image, string? Sunlight, string? Summary)
 {
 }
