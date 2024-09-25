@@ -31,3 +31,22 @@ app.Run();
 internal record Plant(string Name, DateOnly LastWatered, string? Image, string? Sunlight, string? Summary)
 {
 }
+
+public class RandomFailureMiddleware : IMiddleware
+{
+    private Random _rand;
+
+    public RandomFailureMiddleware()
+    {
+        _rand = new Random();
+    }
+
+    public Task InvokeAsync(HttpContext context, RequestDelegate next)
+    {
+        if (_rand.NextDouble() >= 0.5)
+        {
+            throw new Exception("Computer says no.");
+        }
+        return next(context);
+    }
+}
