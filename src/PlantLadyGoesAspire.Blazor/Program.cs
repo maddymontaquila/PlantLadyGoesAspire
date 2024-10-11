@@ -12,7 +12,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<PlantService>(client =>
 {
-    client.BaseAddress = new("http://localhost:5051");
+    client.BaseAddress = new("https://plantladygoesaspire-api");
 });
 
 var app = builder.Build();

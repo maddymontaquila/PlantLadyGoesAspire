@@ -24,6 +24,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseMiddleware<RandomFailureMiddleware>();
 
+
 app.MapGet("/getPlants", () =>
 {
     var plants = JsonSerializer.Deserialize<Plant[]>(System.IO.File.ReadAllText("plants.json")) ?? Array.Empty<Plant>();
