@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>675ca0f5-e69e-4bb2-bc16-451ec32c7923</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.0" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\PlantLadyGoesAspire.Api\PlantLadyGoesAspire.Api.csproj" />
+    <ProjectReference Include="..\..\PlantLadyGoesAspire.Blazor\PlantLadyGoesAspire.Blazor.csproj" />
+  </ItemGroup>
+
+</Project>

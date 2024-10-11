@@ -2,12 +2,17 @@ using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+builder.Services.AddSingleton<RandomFailureMiddleware>();
+
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -17,6 +22,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMiddleware<RandomFailureMiddleware>();
 
 
 app.MapGet("/getPlants", () =>

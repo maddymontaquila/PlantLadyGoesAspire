@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PlantLadyGoesAspire.AppHost\PlantLadyGoesAspire.ServiceDefaults\PlantLadyGoesAspire.ServiceDefaults.csproj" />
     <ProjectReference Include="..\PlantLadyGoesAspire.Blazor.Client\PlantLadyGoesAspire.Blazor.Client.csproj" />
   </ItemGroup>
 
