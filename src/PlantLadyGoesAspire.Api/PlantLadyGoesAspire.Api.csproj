@@ -33,8 +33,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PlantLadyGoesAspire.AppHost\PlantLadyGoesAspire.ServiceDefaults\PlantLadyGoesAspire.ServiceDefaults.csproj" />
-  </ItemGroup>
-
 </Project>
