@@ -11,7 +11,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<PlantService>(client =>
 {
-    client.BaseAddress = new("https://plantladygoesaspire-api");
+    client.BaseAddress = new("https://plants-api");
 });
 
 var app = builder.Build();

@@ -1,8 +1,8 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var api = builder.AddProject<Projects.PlantLadyGoesAspire_Api>("plantladygoesaspire-api");
+var api = builder.AddProject<Projects.PlantLadyGoesAspire_Api>("plants-api");
 
-builder.AddProject<Projects.PlantLadyGoesAspire_Blazor>("plantladygoesaspire-blazor")
+builder.AddProject<Projects.PlantLadyGoesAspire_Blazor>("frontend")
     .WithReference(api);
 
 builder.Build().Run();
